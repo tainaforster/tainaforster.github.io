@@ -1,0 +1,157 @@
+body{
+    background-image: linear-gradient( #ffffff,#ffffff, #112f4d);
+    
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: rgba(143, 133, 46, 0.342);        /* color of the tracking area */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #183e65;    /* color of the scroll thumb */
+    border-radius: 10px;       /* roundness of the scroll thumb */
+}
+
+body { overflow-x: hidden; }
+
+
+/* pesquisar */
+.inputpesq{
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    
+}
+
+::placeholder{
+    font-size: small;
+}
+
+.btnpesq{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 2px solid #183e65;
+    border-radius: 0.6em;
+    color: #183e65;
+    cursor: pointer;
+    line-height: .5;
+    padding: .7em 1.4em;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btnpesq:hover, .btnpesq:focus {
+    color: #fff;
+    outline: 0;
+}
+
+.pesq {
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out ;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.pesq:hover {
+    box-shadow: 0 0 40px 40px #183e65 inset;
+}
+
+
+h3{
+    color: #183e65;
+    font-weight:bolder;
+    text-align: center;
+}
+    
+h3:hover {
+    text-shadow: 0 0 3px #c09538;  
+}
+
+/* botao enviar */
+
+.btnenviar{
+    margin-left: 46%;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 2px solid #183e65;
+    border-radius: 0.6em;
+    color: #183e65;
+    cursor: pointer;
+    line-height: .5;
+    padding: .1em 1.4em;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btnenviar:hover, .btnenviar:focus {
+    color: #fff;
+    outline: 0;
+}
+
+.enviar {
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out ;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.enviar:hover {
+    box-shadow: 0 0 40px 40px #183e65 inset;
+}
+
+
+/* Fotter */
+
+
+footer{
+    background-color: #183e65 !important;
+    margin-top: 14%;
+}
+
+/* css responsivo footer */
+@media only screen and (max-width: 720px) {
+    footer{
+             
+        height: auto;
+        margin-left: 0;  
+    }
+    .p{
+        margin-left: 0px;
+    }   
+}
+
+.p{
+    margin-bottom: 0%;
+    text-align: center;
+    color: white;
+}
+
+.footer{
+    margin-left: 43%;    
+}
+
+.imgRedes{
+    width: 40px;
+    height: auto;
+    border-width: 1px;
+    border-radius: 30px;
+    
+}
+
+.colorWhats:hover {
+    box-shadow: inset 0 0 0 30px #1c9e02;
+}
+
+.colorFace:hover {
+    box-shadow: inset 0 0 0 30px #0256d4;
+}
+
+.colorInsta:hover {
+    box-shadow: inset 0 0 0 30px #b1023d;
+}

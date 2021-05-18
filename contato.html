@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/contato.css">
+    <script type="text/javascript" src="js/contato.js"></script>
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/LOGO MATHEUS ---.png" width="100px" alt="logo header">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active mr-5" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mr-5" href="servicos.html">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mr-5" href="quem_somos.html" tabindex="-1" aria-disabled="true">Quem
+                                Somos </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link mr-5" href="contato.html" tabindex="-1" aria-disabled="true">Contato</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2 mr-2 ml-4 inputpesq" type="search" placeholder="Digite aqui..."
+                            aria-label="Search">
+                        <button class="btn btn-outline btn-sm btnpesq pesq" type="submit">Pesquisar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- espaço do menu para o body -->
+        <div style="height: 100px;"></div>
+
+        <h3>Pré agendamento</h3>
+
+        <div class="container-fluid">
+
+            <form>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Nome</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nome completo">
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-6">
+                        <label for="exampleFormControlInput1">CPF</label>
+                        <input type="email" maxlength="14" onblur="VerificaCPF()" class="form-control"
+                            id="exampleFormControlInput1" placeholder="xxx.xxx.xxx-xx">
+                    </div>
+
+                    <div class="col-6">
+                        <label for="exampleFormControlInput1">CNPJ</label>
+                        <input type="email" maxlength="18" onblur="validarCNPJ()" class="form-control"
+                            id="exampleFormControlInput1" placeholder="xx.xxx.xxx/xxxx-xx">
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Endereço</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Endereço e complemento">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Telefone</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="(xx) xxxx-xxxx">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Deixe sua mensagem</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Deixe aqui sua mensagem. "></textarea>
+                </div>
+            </form>
+            <button type="submit" class="btn enviar btnenviar">Enviar</button>
+
+
+        </div>
+
+        
+    </div>
+    <footer>
+        <p class="p">End.: R. Cel. Wenceslau Soares, s/n - Centro - Ibiapina/CE</p>
+        <div class="footer">
+
+            <a href="https://api.whatsapp.com/send?phone=558889801404" target="_blank"><img
+                    class="imgRedes colorWhats" src="img/icon whatsapp1.png" alt="Icone Whatsapp"></a>
+
+            <a href="https://www.facebook.com/Matheus-Freire-113189996720479/" target="_blank"><img
+                    class="imgRedes colorFace" src="img/icon FB.png" alt="Icone Facebook"></a>
+
+            <a href="https://www.instagram.com/matheus.freirec/" target="_blank"><img class="imgRedes colorInsta"
+                    src="img/icon Insta.png" alt="Icone Instagram"></a>
+    </footer>
+
+
+
+</body>
+
+</html>

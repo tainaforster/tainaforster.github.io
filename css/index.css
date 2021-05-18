@@ -1,0 +1,193 @@
+
+
+body{
+    background-image: linear-gradient( #ffffff,#ffffff, #112f4d);
+    
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: rgba(143, 133, 46, 0.342);        /* color of the tracking area */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #183e65;    /* color of the scroll thumb */
+    border-radius: 10px;       /* roundness of the scroll thumb */
+}
+
+body { overflow-x: hidden; }
+
+
+.scrollTop{
+    position: fixed;
+    bottom: 70px;
+    right: 15px;
+    width: 32px;
+    height: 33px;
+    background: #fff url(up.png);
+    border-radius: 50%;
+    background-size: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 10000;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.scrollTop.active
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+/* pesquisar */
+.inputpesq{
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    
+}
+
+::placeholder{
+    font-size: small;
+}
+
+.btnpesq{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 2px solid #183e65;
+    border-radius: 0.6em;
+    color: #183e65;
+    cursor: pointer;
+    line-height: .5;
+    padding: .7em 1.4em;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btnpesq:hover, .btnpesq:focus {
+    color: #fff;
+    outline: 0;
+}
+
+.pesq {
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out ;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.pesq:hover {
+    box-shadow: 0 0 40px 40px #183e65 inset;
+}
+
+
+/* dúvidas frequentes */
+
+.duvidas{
+    background-color: #183e65;
+}
+
+.duvidas:hover{
+    border-top: 2px solid #c09538; 
+}
+
+.duvidaBorda{
+    border: solid 1px #c09538;
+    background-color: #fff9ec;
+    padding: 2%;
+    font-size: small;
+}
+
+
+
+
+
+
+
+
+h4, h5{
+    color: #183e65;
+    font-weight:bolder;
+    text-align: center  ;
+}
+
+h4:hover {
+    text-shadow: 0 0 3px #c09538;  
+}
+
+h5:hover {
+    text-shadow: 0 0 3px #c09538;
+    
+}
+
+.cards{
+    border-color: #c09538;
+    padding: 3%;
+    /* height: 20em; */
+}
+
+
+
+/* container baixo */
+
+.contbaixo{
+    width: 100%;
+}
+
+
+/* Fotter */
+
+
+footer{
+    background-color: #183e65 !important;
+    
+}
+
+/* css responsivo footer */
+@media only screen and (max-width: 720px) {
+    footer{
+             
+        height: auto;
+        margin-left: 0;  
+    }
+    .p{
+        margin-left: 0px;
+    }
+}
+
+.p{
+    margin-bottom: 0%;
+    text-align: center;
+    color: white;
+}
+
+.footer{
+    margin-left: 43%;    
+}
+
+.imgRedes{
+    width: 40px;
+    height: auto;
+    border-width: 1px;
+    border-radius: 30px;
+    
+}
+
+.colorWhats:hover {
+    box-shadow: inset 0 0 0 30px #1c9e02;
+}
+
+.colorFace:hover {
+    box-shadow: inset 0 0 0 30px #0256d4;
+}
+
+.colorInsta:hover {
+    box-shadow: inset 0 0 0 30px #b1023d;
+}
